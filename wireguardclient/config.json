@@ -1,0 +1,31 @@
+{
+  "name": "WireGuard Client",
+  "version": "dev",
+  "slug": "wireguardclient",
+  "description": "WireGuard Client",
+  "url": "https://github.com/kowalsio/ha-addons/",
+  "arch": ["armv7", "armhf", "amd64", "aarch64", "i386"],
+  "init": false,
+  "hassio_api": true,
+  "privileged": ["NET_ADMIN"],
+  "devices": ["/dev/net/tun"],
+  "host_network": true,
+  "auth_api": true,
+  "map": ["ssl:rw"],
+    "options": {
+    "client_private_key": "",
+    "client_ip_address": "",
+    "server_public_key": "",
+    "allowed_ips": "",
+    "endpoint": "hostname_or_ip:port",
+    "keep_alive": 20
+  },
+  "schema": {
+    "client_private_key": "str",
+    "client_ip_address": "str",
+    "server_public_key": "str",
+    "allowed_ips": "str",
+    "endpoint": "str",
+    "keep_alive": "int"
+  }
+}

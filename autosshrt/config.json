@@ -1,0 +1,32 @@
+{
+  "name": "AutoSSH Remote Tunnel",
+  "version": "1.0",
+  "slug": "autosshrt",
+  "description": "Automatically connects to a ssh server and tunnels Home Assistant web interface port",
+  "url": "https://github.com/kowalsio/ha-addons/",
+  "arch": ["armv7", "armhf", "amd64", "aarch64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "host_network": true,
+  "map": ["config:rw"],
+  "options": {
+    "hostname": "",
+    "ssh_port": "22",
+    "username": "username",
+    "remote_forwarding": ["127.0.0.1:8123:172.17.0.1:8123"],
+    "other_ssh_options": "-v",
+    "monitor_port": "8124",
+    "monitor_port_enable": true,
+    "regenerate_key": false
+  },
+  "schema": {
+    "hostname": "str",
+    "ssh_port": "int",
+    "username": "str",
+    "remote_forwarding": ["str"],
+    "other_ssh_options": "str",
+    "monitor_port": "int",
+    "monitor_port_enable": "bool",
+    "regenerate_key": "bool"
+  }
+}
