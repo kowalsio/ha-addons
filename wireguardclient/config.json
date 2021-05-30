@@ -17,7 +17,7 @@
     "client_ip_address": "",
     "server_public_key": "",
     "allowed_ips": "",
-    "endpoint": "hostname_or_ip:port",
+    "endpoint": "",
     "keep_alive": 20
   },
   "schema": {
