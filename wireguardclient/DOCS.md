@@ -14,12 +14,12 @@ This add-on allows you to configure a WireGuard client that allows connections t
 # First run
 1. Before the first run go to the WireGuard Client Configuration page
 2. Set configuration options
-**client_private_key:** - Your WireGuard client private key
-**client_ip_address** - Your WireGuard client IP
-**server_public_key** - Remote WireGuard server public key
-**allowed_ips**: - A list of IPs (IPv4 or IPv6) addresses (optionally with CIDR masks) from which incoming traffic from the server is allowed and to which outgoing traffic for this peer is directed.
-**endpoint** -  Remote WireGuard server hostname/IP and port number (IP_or_Hostname:PORT_Number)
-**keep_alive** - A seconds interval, between 1 and 65535 inclusive, of how often to send an authenticated empty packet for keeping a stateful firewall or NAT mapping valid persistently.
+- **client_private_key:** - Your WireGuard client private key
+- **client_ip_address** - Your WireGuard client IP
+- **server_public_key** - Remote WireGuard server public key
+- **allowed_ips**: - A list of IPs (IPv4 or IPv6) addresses (optionally with CIDR masks) from which incoming traffic from the server is allowed and to which outgoing traffic for this peer is directed.
+- **endpoint** -  Remote WireGuard server hostname/IP and port number (IP_or_Hostname:PORT_Number)
+- **keep_alive** - A seconds interval, between 1 and 65535 inclusive, of how often to send an authenticated empty packet for keeping a stateful firewall or NAT mapping valid persistently.
 3. Save the configuration.
 4. Start the "WireGuard Client" add-on
 5. Check the logs of the "WireGuard" add-on to see if everything went well.
