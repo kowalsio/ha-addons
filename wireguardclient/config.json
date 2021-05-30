@@ -1,6 +1,6 @@
 {
   "name": "WireGuard Client",
-  "version": "dev",
+  "version": "1.0",
   "slug": "wireguardclient",
   "description": "WireGuard Client",
   "url": "https://github.com/kowalsio/ha-addons/",
